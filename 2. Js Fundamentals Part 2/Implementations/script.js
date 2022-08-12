@@ -69,6 +69,7 @@ const age = function (dob) {
 }
 console.log(age(1998));
 
+
 //? Arrow Functions
 
 const age2 = dob => 2022 - dob;
@@ -81,3 +82,22 @@ const retirementYearsLeft = (dob, firstName) => {
   return `${firstName} has left ${yearleft} in his retirement`;
 }
 console.log(retirementYearsLeft(1998, 'Adnan'));
+
+
+//? Calling Function into Function
+
+function cutFruitsIntoPieces(fruite) {
+  
+  return fruite * 4;
+
+}
+
+function Juicer(apple, oranges) {
+
+  const applesPieces = cutFruitsIntoPieces(apple);
+  const orangesPieces = cutFruitsIntoPieces(oranges);
+  const juice = `Juice with ${applesPieces} apples pieces and ${orangesPieces} oranges pieces.`;
+  return juice; 
+}
+
+console.log(Juicer(4, 2)); 
