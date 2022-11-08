@@ -1,7 +1,7 @@
 
 // ! 1. Activating strict mode
 
-// // Def : This mode helps to identify the type of error occurs in our code on the console of webpage
+// Def : This mode helps to identify the type of error occurs in our code on the console of webpage
 
 // 'use strict'
 
